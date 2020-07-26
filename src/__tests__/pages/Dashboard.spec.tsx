@@ -88,6 +88,8 @@ describe('Dashboard', () => {
 
     const { getByText } = render(<Dashboard />);
 
+    // console.log(getByText('Qual'));
+
     await wait(() => expect(getByText('Ao molho')).toBeTruthy(), {
       timeout: 200,
     });
